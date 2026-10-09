@@ -80,7 +80,7 @@ Class | Method | HTTP request | Description
 *MessagesApi* | [**moveMessages**](docs/Api/MessagesApi.md#movemessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/move | Move messages
 *MessagesApi* | [**patchMessage**](docs/Api/MessagesApi.md#patchmessage) | **PATCH** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/{uid} | Update message flags
 *MessagesApi* | [**searchMessages**](docs/Api/MessagesApi.md#searchmessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/search | Search messages
-*MessagesApi* | [**updateMessageFlags**](docs/Api/MessagesApi.md#updatemessageflags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update message flags
+*MessagesApi* | [**updateMessageFlags**](docs/Api/MessagesApi.md#updatemessageflags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update flags on multiple messages
 *QuotaApi* | [**getQuota**](docs/Api/QuotaApi.md#getquota) | **GET** /api/v1/mailboxes/{mailboxResourceId}/quota | Get mailbox quota
 *SendApi* | [**sendEmail**](docs/Api/SendApi.md#sendemail) | **POST** /api/v1/mailboxes/{mailboxResourceId}/send | Send email
 *WebhooksApi* | [**createWebhook**](docs/Api/WebhooksApi.md#createwebhook) | **POST** /api/v1/mailboxes/{mailboxResourceId}/webhooks | Create webhook

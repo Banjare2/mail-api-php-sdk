@@ -16,7 +16,7 @@ All URIs are relative to https://api.mail.hostinger.com, except if the operation
 | [**moveMessages()**](MessagesApi.md#moveMessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/move | Move messages |
 | [**patchMessage()**](MessagesApi.md#patchMessage) | **PATCH** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/{uid} | Update message flags |
 | [**searchMessages()**](MessagesApi.md#searchMessages) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/search | Search messages |
-| [**updateMessageFlags()**](MessagesApi.md#updateMessageFlags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update message flags |
+| [**updateMessageFlags()**](MessagesApi.md#updateMessageFlags) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder}/messages/flags | Update flags on multiple messages |
 
 
 ## `deleteAllMessages()`
@@ -634,7 +634,7 @@ try {
 updateMessageFlags($mailboxResourceId, $folder, $v1FolderMessagesFlagsBulkRequest): \Hostinger\Model\V1FolderMessagesUpdateFlagsResult
 ```
 
-Update message flags
+Update flags on multiple messages
 
 Add and/or remove flags on multiple messages. Returns 200 when all UIDs succeed, 207 with per-UID outcome when some fail.
 
