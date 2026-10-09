@@ -63,6 +63,7 @@ All URIs are relative to *https://api.mail.hostinger.com*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AccountApi* | [**getCurrentAccount**](docs/Api/AccountApi.md#getcurrentaccount) | **GET** /api/v1/me | Get the authenticated account
+*FeedbackApi* | [**submitFeedback**](docs/Api/FeedbackApi.md#submitfeedback) | **POST** /api/v1/mailboxes/{mailboxResourceId}/feedback | Submit feedback
 *FoldersApi* | [**createFolder**](docs/Api/FoldersApi.md#createfolder) | **POST** /api/v1/mailboxes/{mailboxResourceId}/folders | Create folder
 *FoldersApi* | [**deleteFolder**](docs/Api/FoldersApi.md#deletefolder) | **DELETE** /api/v1/mailboxes/{mailboxResourceId}/folders/{folder} | Delete folder
 *FoldersApi* | [**listFolders**](docs/Api/FoldersApi.md#listfolders) | **GET** /api/v1/mailboxes/{mailboxResourceId}/folders | List folders
@@ -94,6 +95,7 @@ Class | Method | HTTP request | Description
 
 - [Error](docs/Model/Error.md)
 - [Pagination](docs/Model/Pagination.md)
+- [V1FeedbackSubmitRequest](docs/Model/V1FeedbackSubmitRequest.md)
 - [V1FolderMessagesCollection](docs/Model/V1FolderMessagesCollection.md)
 - [V1FolderMessagesDeleteBulkRequest](docs/Model/V1FolderMessagesDeleteBulkRequest.md)
 - [V1FolderMessagesFlagsBulkRequest](docs/Model/V1FolderMessagesFlagsBulkRequest.md)

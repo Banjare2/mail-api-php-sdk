@@ -179,9 +179,9 @@ $config = Hostinger\Configuration::getDefaultConfiguration()->setAccessToken('YO
 
 $apiInstance = new Hostinger\Api\WebhooksApi(config: $config);
 $mailboxResourceId = AC1a2b3c4d5e6f7g; // string | Resource ID of the managed mailbox the bearer token is authorized for.
-$status = 'status_example'; // string
-$page = 1; // int
-$perPage = 15; // int
+$status = 'status_example'; // string | Return only webhooks with this status.
+$page = 1; // int | Page number (1-based).
+$perPage = 15; // int | Items per page (max 1000).
 
 try {
     $result = $apiInstance->listWebhooks($mailboxResourceId, $status, $page, $perPage);
@@ -196,9 +196,9 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **mailboxResourceId** | **string**| Resource ID of the managed mailbox the bearer token is authorized for. | |
-| **status** | **string**|  | [optional] |
-| **page** | **int**|  | [optional] [default to 1] |
-| **perPage** | **int**|  | [optional] [default to 15] |
+| **status** | **string**| Return only webhooks with this status. | [optional] |
+| **page** | **int**| Page number (1-based). | [optional] [default to 1] |
+| **perPage** | **int**| Items per page (max 1000). | [optional] [default to 15] |
 
 ### Return type
 

@@ -596,9 +596,9 @@ $config = Hostinger\Configuration::getDefaultConfiguration()->setAccessToken('YO
 $apiInstance = new Hostinger\Api\MessagesApi(config: $config);
 $mailboxResourceId = AC1a2b3c4d5e6f7g; // string | Resource ID of the managed mailbox the bearer token is authorized for.
 $folder = INBOX; // string | Folder path (URL-encoded).
-$page = 1; // int
-$perPage = 25; // int
-$sort = '-uid'; // string
+$page = 1; // int | Page number (1-based).
+$perPage = 25; // int | Items per page (max 100).
+$sort = '-uid'; // string | Sort field with optional `-` prefix for descending. Allowed: uid, date, size.
 $v1FolderMessagesSearchRequest = new \Hostinger\Model\V1FolderMessagesSearchRequest(); // \Hostinger\Model\V1FolderMessagesSearchRequest
 
 try {
@@ -615,9 +615,9 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **mailboxResourceId** | **string**| Resource ID of the managed mailbox the bearer token is authorized for. | |
 | **folder** | **string**| Folder path (URL-encoded). | |
-| **page** | **int**|  | [optional] [default to 1] |
-| **perPage** | **int**|  | [optional] [default to 25] |
-| **sort** | **string**|  | [optional] [default to &#39;-uid&#39;] |
+| **page** | **int**| Page number (1-based). | [optional] [default to 1] |
+| **perPage** | **int**| Items per page (max 100). | [optional] [default to 25] |
+| **sort** | **string**| Sort field with optional &#x60;-&#x60; prefix for descending. Allowed: uid, date, size. | [optional] [default to &#39;-uid&#39;] |
 | **v1FolderMessagesSearchRequest** | [**\Hostinger\Model\V1FolderMessagesSearchRequest**](../Model/V1FolderMessagesSearchRequest.md)|  | [optional] |
 
 ### Return type
